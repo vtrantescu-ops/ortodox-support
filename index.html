@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrtodoxRO – Suport</title>
+    <style>
+        :root {
+            --bg: #fdfaf6;
+            --card: #ffffff;
+            --accent: #b8860b;
+            --accent-light: #f5e6c8;
+            --text: #2c2c2c;
+            --text-secondary: #666666;
+            --border: #e8e0d4;
+            --shadow: rgba(0,0,0,0.06);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1714;
+                --card: #252220;
+                --accent: #d4a843;
+                --accent-light: #3a3020;
+                --text: #e8e0d4;
+                --text-secondary: #a09888;
+                --border: #3a3530;
+                --shadow: rgba(0,0,0,0.3);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 56px 24px 40px;
+            background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg) 100%);
+        }
+        .hero-icon {
+            font-size: 3.2rem;
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px 24px;
+            width: 100%;
+        }
+
+        /* Cards */
+        .card {
+            display: flex;
+            align-items: center;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 14px;
+            text-decoration: none;
+            color: var(--text);
+            transition: box-shadow 0.2s, transform 0.15s;
+            box-shadow: 0 1px 3px var(--shadow);
+        }
+        .card:hover {
+            box-shadow: 0 4px 14px var(--shadow);
+            transform: translateY(-1px);
+        }
+        .card-icon {
+            font-size: 2rem;
+            margin-right: 18px;
+            flex-shrink: 0;
+        }
+        .card-body h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        .card-body p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        .card-arrow {
+            margin-left: auto;
+            padding-left: 12px;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        /* Divider */
+        .divider {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 28px 0 22px;
+        }
+
+        /* Contact section */
+        .contact {
+            text-align: center;
+            padding: 8px 20px 20px;
+        }
+        .contact h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .contact p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact a:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-icon">☦️</div>
+        <h1>OrtodoxRO</h1>
+        <p>Calendar ortodox pentru iOS — sărbători, posturi, notificări și sincronizare.</p>
+    </div>
+
+    <div class="content">
+        <a href="guide.html" class="card">
+            <div class="card-icon">📖</div>
+            <div class="card-body">
+                <h2>Ghid de utilizare</h2>
+                <p>Primii pași, funcții, setări și depanare rapidă.</p>
+            </div>
+            <div class="card-arrow">›</div>
+        </a>
+
+        <a href="privacy.html" class="card">
+            <div class="card-icon">🔒</div>
+            <div class="card-body">
+                <h2>Politica de confidențialitate</h2>
+                <p>Cum sunt prelucrate și protejate datele tale.</p>
+            </div>
+            <div class="card-arrow">›</div>
+        </a>
+
+        <hr class="divider">
+
+        <div class="contact">
+            <h3>Ai nevoie de ajutor?</h3>
+            <p>Contactează dezvoltatorul:</p>
+            <p><a href="mailto:vt_apps@yahoo.com">vt_apps@yahoo.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Valentin Trantescu · OrtodoxRO
+    </footer>
+
+</body>
+</html>

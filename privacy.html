@@ -91,7 +91,7 @@
     <a href="index.html" class="back-link">← Înapoi la pagina de suport</a>
     <a href="privacy-en.html" class="lang-switch">🇬🇧 English</a>
     <h1>OrtodoxRO</h1>
-    <p class="updated">Politica de confidențialitate · Ultima actualizare: 5 aprilie 2026</p>
+    <p class="updated">Politica de confidențialitate · Ultima actualizare: 17 septembrie 2026</p>
 
     <div class="section">
         <h2>1. Operator</h2>
@@ -118,12 +118,13 @@
         <p>Aplicația poate stoca local, pe dispozitiv:</p>
         <ul>
             <li>preferințe de utilizare (limbă, opțiuni de notificare, filtre calendar, setări export);</li>
-            <li>lista de prieteni (nume, aliasuri, telefon, preferințe de formulare);</li>
+            <li>lista de prieteni (nume, aliasuri, telefon, zi de naștere și preferințe de formulare);</li>
             <li>stare locală necesară pentru funcționare (de exemplu, setări widget și starea Premium în App Group).</li>
         </ul>
 
         <h3>3.2 Date din contacte (opțional)</h3>
-        <p>Dacă alegi funcția de completare din Contacte, datele selectate (ex. nume, telefon) pot fi copiate în profilul de prieten din aplicație pentru funcționalitatea de urări și potrivire onomastică.</p>
+        <p>Dacă alegi funcția de completare din Contacte, aplicația deschide selectorul de contacte al sistemului iOS. Acesta rulează în afara aplicației, așa că OrtodoxRO nu primește acces la agenda ta și nu îți poate citi contactele: primește doar contactul pe care îl atingi tu.</p>
+        <p>Din contactul ales sunt copiate în profilul de prieten numele, primul număr de telefon și ziua de naștere, pentru funcționalitatea de urări, potrivire onomastică și memento aniversar. Din ziua de naștere se păstrează doar ziua și luna — anul nașterii nu este stocat.</p>
 
         <h3>3.3 Compunere mesaje de urare</h3>
         <p>Atunci când trimiți o urare, aplicația deschide interfața nativă de compunere SMS sau Share Sheet cu numărul de telefon și textul mesajului, fără a transmite aceste date către servere externe. Trimiterea efectivă se face doar prin acțiunea ta explicită.</p>
@@ -133,6 +134,10 @@
 
         <h3>3.5 Date despre abonament</h3>
         <p>Pentru Premium, validarea abonamentului și fluxul de plată sunt gestionate prin App Store / StoreKit (Apple).</p>
+
+        <h3>3.6 Aplicația pentru Apple Watch</h3>
+        <p>Calendarul liturgic este calculat local, pe ceas, din datele incluse în aplicație. De pe iPhone, ceasul primește doar două informații, prin WatchConnectivity: starea abonamentului Premium și limba aleasă în aplicație.</p>
+        <p>Lista de prieteni, zilele de naștere și numerele de telefon <strong>nu</strong> sunt transmise către ceas. Transferul are loc direct între dispozitivele tale, prin mecanismele Apple, fără servere intermediare.</p>
     </div>
 
     <div class="section">
@@ -140,10 +145,10 @@
         <p>Aplicația poate solicita următoarele permisiuni, în funcție de funcțiile activate:</p>
         <ul>
             <li><strong>Calendar:</strong> pentru export/sincronizare evenimente liturgice în Calendar iOS.</li>
-            <li><strong>Notificări:</strong> pentru memento-uri liturgice și memento-uri de onomastică.</li>
-            <li><strong>Contacte:</strong> pentru import rapid de nume/telefon în secțiunea Prieteni.</li>
+            <li><strong>Notificări:</strong> pentru memento-uri liturgice, de onomastică și pentru zilele de naștere ale prietenilor.</li>
         </ul>
         <p>Poți retrage oricând aceste permisiuni din iOS Settings.</p>
+        <div class="tip">Pentru <strong>Contacte</strong> nu este necesară nicio permisiune: aplicația folosește selectorul de contacte al sistemului, care îi trimite doar contactul ales de tine, fără a-i da acces la restul agendei.</div>
     </div>
 
     <div class="section">

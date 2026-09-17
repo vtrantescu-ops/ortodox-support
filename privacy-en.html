@@ -91,7 +91,7 @@
     <a href="index.html" class="back-link">← Back to support</a>
     <a href="privacy.html" class="lang-switch">🇷🇴 Română</a>
     <h1>OrtodoxRO</h1>
-    <p class="updated">Privacy Policy · Last updated: April 5, 2026</p>
+    <p class="updated">Privacy Policy · Last updated: September 17, 2026</p>
 
     <div class="section">
         <h2>1. Developer</h2>
@@ -118,12 +118,13 @@
         <p>The app may store locally on your device:</p>
         <ul>
             <li>usage preferences (language, notification options, calendar filters, export settings);</li>
-            <li>friends list (name, aliases, phone number, greeting preferences);</li>
+            <li>friends list (name, aliases, phone number, birthday and greeting preferences);</li>
             <li>local state required for operation (e.g., widget settings and Premium status in App Group).</li>
         </ul>
 
         <h3>3.2 Contact data (optional)</h3>
-        <p>If you use the auto-fill from Contacts feature, selected data (e.g., name, phone) may be copied to a friend profile within the app for greeting and name day matching functionality.</p>
+        <p>If you use the auto-fill from Contacts feature, the app opens the iOS system contact picker. The picker runs outside the app, so OrtodoxRO is never granted access to your address book and cannot read your contacts: it receives only the single contact you tap.</p>
+        <p>From the contact you choose, the name, first phone number and birthday are copied into the friend profile, for greetings, name day matching and birthday reminders. Only the day and month of the birthday are stored — the year of birth is not.</p>
 
         <h3>3.3 Greeting message composition</h3>
         <p>When you send a greeting, the app opens the native SMS composer or Share Sheet with the phone number and message text, without transmitting this data to external servers. The actual sending is done only through your explicit action.</p>
@@ -133,6 +134,10 @@
 
         <h3>3.5 Subscription data</h3>
         <p>For Premium, subscription validation and payment flow are managed through the App Store / StoreKit (Apple).</p>
+
+        <h3>3.6 Apple Watch app</h3>
+        <p>The liturgical calendar is computed locally on the watch, from data bundled with the app. From your iPhone, the watch receives only two pieces of information, over WatchConnectivity: your Premium subscription status and the language selected in the app.</p>
+        <p>Your friends list, birthdays and phone numbers are <strong>not</strong> sent to the watch. The transfer happens directly between your own devices, through Apple's mechanisms, with no intermediate servers.</p>
     </div>
 
     <div class="section">
@@ -140,10 +145,10 @@
         <p>The app may request the following permissions, depending on the features you activate:</p>
         <ul>
             <li><strong>Calendar:</strong> to export/sync liturgical events to iOS Calendar.</li>
-            <li><strong>Notifications:</strong> for liturgical reminders and name day reminders.</li>
-            <li><strong>Contacts:</strong> for quick import of name/phone into the Friends section.</li>
+            <li><strong>Notifications:</strong> for liturgical reminders, name day reminders and friends' birthday reminders.</li>
         </ul>
         <p>You can revoke these permissions at any time from iOS Settings.</p>
+        <div class="tip">No permission is required for <strong>Contacts</strong>: the app uses the system contact picker, which hands it only the contact you select, without granting access to the rest of your address book.</div>
     </div>
 
     <div class="section">

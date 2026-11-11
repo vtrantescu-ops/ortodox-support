@@ -84,6 +84,20 @@
             margin: 10px 0;
             font-size: 0.92rem;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0 12px;
+            font-size: 0.92rem;
+        }
+        th, td {
+            text-align: left;
+            vertical-align: top;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        th { color: var(--text-secondary); font-weight: 600; }
+        td:first-child { white-space: nowrap; font-weight: 600; }
         .back-link {
             display: inline-block;
             margin-bottom: 20px;
@@ -94,15 +108,15 @@
 <body>
     <a href="index.html" class="back-link">← Înapoi la pagina de suport</a>
     <h1>OrtodoxRO</h1>
-    <p class="updated">Ghid de utilizare · Ultima actualizare: 7 octombrie 2026</p>
+    <p class="updated">Ghid de utilizare · Ultima actualizare: 11 noiembrie 2026</p>
 
     <div class="section">
         <h2>1. Despre aplicație</h2>
         <p>OrtodoxRO este o aplicație iOS pentru calendarul ortodox, cu accent pe:</p>
         <ul>
-            <li>sărbători și informații liturgice zilnice;</li>
-            <li>posturi și dezlegări;</li>
-            <li>filtrare rapidă în vizualizare listă/grilă;</li>
+            <li>sărbători și informații liturgice zilnice, după calendarul oficial al Bisericii Ortodoxe Române;</li>
+            <li>postul fiecărei zile, spus în cuvinte („Post”, „Post · pește”, „Fără post”…);</li>
+            <li>vizualizare listă sau grilă, cu filtre rapide;</li>
             <li>widget-uri pe iPhone și aplicație dedicată cu complicații pe Apple Watch;</li>
             <li>funcții Premium: notificări avansate, prieteni, sincronizare în Calendar iOS, widget.</li>
         </ul>
@@ -122,61 +136,104 @@
         <ol>
             <li>Deschide aplicația și parcurge onboarding-ul.</li>
             <li>Alege dacă vrei să încerci Premium sau să continui în modul gratuit.</li>
-            <li>În ecranul principal:
-                <ul>
-                    <li>schimbă luna din bara de navigare (afișată în body, deasupra listei);</li>
-                    <li>ziua curentă este evidențiată vizual (fundal colorat și bordură mai puternică);</li>
-                    <li>schimbă vizualizarea între Listă și Grilă din toolbar;</li>
-                    <li>activează filtrele rapide cu butonul de filtrare din toolbar — bara se ascunde automat când nu sunt filtre active.</li>
-                </ul>
-            </li>
         </ol>
     </div>
 
     <div class="section">
-        <h2>4. Detalii zi liturgică</h2>
-        <p>Atinge orice zi pentru a deschide ecranul de detalii.</p>
-        <p>Vezi informațiile asociate zilei: sărbători, tipuri de marcaje liturgice și context de post/dezlegare.</p>
-    </div>
+        <h2>4. Ecranul calendarului</h2>
 
-    <div class="section">
-        <h2>5. Setări</h2>
-        <p>Din ecranul Setări (iconița roată din toolbar) poți:</p>
+        <h3>Bara de sus</h3>
         <ul>
-            <li><strong>Ce se vede în calendar</strong> — alegi ce marcaje apar în calendar (cruce roșie, cruce neagră, post și dezlegări). Tot aici găsești <strong>Legenda simbolurilor</strong>, care explică fiecare iconiță;</li>
-            <li><strong>Fără spălat rufe</strong> — alegi în ce zile apare simbolul mașinii de spălat: zilele cu cruce roșie și neagră sau doar cele cu cruce roșie;</li>
-            <li><strong>Notificări</strong> (Premium) — pornești mementourile, alegi ora și ce mementouri primești;</li>
-            <li><strong>Prieteni</strong> (Premium) — gestionezi lista de prieteni pentru mementourile de onomastică și zi de naștere;</li>
-            <li><strong>Calendar iOS</strong> (Premium) — exporți sărbătorile în aplicația Calendar;</li>
-            <li><strong>Limbă</strong> — Română, Engleză sau „La fel ca telefonul”;</li>
-            <li><strong>Abonament</strong> — treci la Premium, restaurezi achizițiile sau gestionezi abonamentul;</li>
-            <li><strong>Despre aplicație</strong> — versiunea, acest ghid, contact și suport, evaluarea aplicației în App Store, politica de confidențialitate și termenii.</li>
+            <li><strong>Azi</strong> — te întoarce la ziua de azi, din orice lună.</li>
+            <li><strong>Lupa</strong> — caută o sărbătoare sau un sfânt în tot anul.</li>
+            <li><strong>⋯</strong> — meniul cu <strong>Filtre rapide</strong>, <strong>Legenda simbolurilor</strong> și <strong>Rânduieli bisericești</strong> (Premium).</li>
+            <li><strong>Roata</strong> — deschide Setările.</li>
         </ul>
-        <div class="tip">Funcțiile Premium apar în Setări cu eticheta „Premium” și un lacăt; atinge rândul ca să vezi detaliile abonamentului. Dacă nu ești abonat Premium, un punct portocaliu apare pe iconița de setări ca indicator discret.</div>
+
+        <h3>Luna</h3>
+        <ul>
+            <li>Schimbă luna cu săgețile <strong>‹ ›</strong> sau glisând spre stânga / dreapta.</li>
+            <li>Atinge numele lunii ca să alegi direct o lună și un an.</li>
+            <li>Calendarul acoperă anii <strong>2025–2037</strong>, pentru care aplicația include calendarul oficial al Bisericii Ortodoxe Române. La prima și la ultima lună, săgeata corespunzătoare este estompată.</li>
+            <li>Sub numele lunii apare postul sau perioada lunii, de exemplu „Postul Nașterii · din 15 nov.”.</li>
+            <li>Alege între <strong>Listă</strong> și <strong>Grilă</strong> din butonul de sub numele lunii.</li>
+        </ul>
+
+        <h3>Lista</h3>
+        <ul>
+            <li>Sus, cardul <strong>Azi</strong> arată sfântul zilei, postul în cuvinte și ce urmează mâine. Atinge-l pentru toate detaliile.</li>
+            <li>Fiecare zi arată sfântul principal (cu roșu în zilele cu cruce roșie), ceilalți sfinți dedesubt și eticheta postului.</li>
+        </ul>
+
+        <h3>Grila</h3>
+        <ul>
+            <li>Fiecare zi are crucea (roșie sau neagră) și un punct colorat pentru post.</li>
+            <li>Atinge o zi ca să vezi, sub grilă, sfântul și postul ei; <strong>Toate detaliile zilei</strong> deschide ecranul complet.</li>
+        </ul>
+
+        <h3>Ce înseamnă etichetele de post</h3>
+        <table>
+            <tr><th>Eticheta</th><th>Ce înseamnă</th></tr>
+            <tr><td>Post</td><td>zi de post: fără carne, lactate și ouă</td></tr>
+            <tr><td>Post negru</td><td>post aspru, după puterea fiecăruia (ex. Ajunul Crăciunului, Vinerea Mare)</td></tr>
+            <tr><td>Post · pește</td><td>zi de post, cu dezlegare la pește</td></tr>
+            <tr><td>Post · vin și ulei</td><td>zi de post, cu dezlegare la vin și untdelemn</td></tr>
+            <tr><td>Lactate și ouă</td><td>fără carne; lactatele și ouăle sunt permise (Săptămâna brânzei)</td></tr>
+            <tr><td>Fără post · harți</td><td>nu se postește, nici miercurea sau vinerea</td></tr>
+            <tr><td>Fără post</td><td>zi obișnuită</td></tr>
+        </table>
+        <p>Toate simbolurile sunt explicate și în aplicație: <strong>⋯ → Legenda simbolurilor</strong>.</p>
+        <div class="tip">Dacă o zi dintr-un post nu are nicio etichetă, înseamnă că <strong>calendarul oficial nu precizează postul</strong> pentru ea. Aplicația nu ghicește; în detaliile zilei scrie explicit acest lucru.</div>
     </div>
 
     <div class="section">
-        <h2>6. Calendar iOS (Premium)</h2>
+        <h2>5. Detaliile zilei</h2>
+        <p>Atinge orice zi ca să deschizi detaliile ei:</p>
+        <ul>
+            <li><strong>Postul zilei</strong> — eticheta și explicația ei, cu aceleași cuvinte ca în calendar;</li>
+            <li><strong>Sărbătorile zilei</strong> — sfântul principal și ceilalți sfinți pomeniți, cu tipul crucii;</li>
+            <li><strong>Spălat rufe (tradiție populară)</strong> — în zilele în care, după tradiție, nu se face muncă grea.</li>
+        </ul>
+        <div class="tip">Textul este orientativ și nu înlocuiește tipicul eparhiei, indicația duhovnicului sau starea de sănătate.</div>
+    </div>
+
+    <div class="section">
+        <h2>6. Setări</h2>
+        <p>Din ecranul Setări (roata din bara de sus) poți:</p>
+        <ul>
+            <li><strong>OrtodoxRO Premium</strong> (sus) — vezi ce include Premium, începi perioada de probă gratuită sau restaurezi achizițiile. Dacă ești abonat, aici scrie <strong>Premium activ</strong>, cu data reînnoirii și butonul <strong>Gestionează abonamentul</strong>;</li>
+            <li><strong>Calendar → Marcaje afișate</strong> — alegi ce marcaje apar în calendar: cruce roșie, cruce neagră, post și dezlegări;</li>
+            <li><strong>Calendar → Fără spălat rufe</strong> — alegi în ce zile apare simbolul mașinii de spălat: doar zilele cu cruce roșie (implicit) sau zilele cu cruce roșie și neagră;</li>
+            <li><strong>Calendar → Limba</strong> — Română, Engleză sau „La fel ca telefonul”;</li>
+            <li><strong>Mementouri</strong> (Premium) — notificările, ora lor, ce mementouri primești și lista de prieteni;</li>
+            <li><strong>Calendar iOS</strong> (Premium) — exportul sărbătorilor în aplicația Calendar;</li>
+            <li><strong>Despre</strong> — acest ghid, contact și suport, evaluarea aplicației, politica de confidențialitate, termenii și versiunea.</li>
+        </ul>
+        <div class="tip">Secțiunile <strong>Mementouri</strong> și <strong>Calendar iOS</strong> apar în Setări după ce activezi Premium.</div>
+    </div>
+
+    <div class="section">
+        <h2>7. Calendar iOS (Premium)</h2>
         <p>Funcția de export în Calendar iOS este disponibilă în Premium. Aplicația adaugă în aplicația Calendar un calendar separat, <strong>OrtodoxRO</strong>, cu sărbătorile alese. Calendarele tale existente nu sunt modificate.</p>
         <p><strong>Pași:</strong></p>
         <ol>
-            <li>Deschide Setări → <strong>Calendar iOS</strong>.</li>
+            <li>Deschide Setări și coboară la secțiunea <strong>Calendar iOS</strong>.</li>
             <li>La <strong>Exportă pentru</strong>, alege perioada: 1 lună, 3 luni, 6 luni, 1 an sau 2 ani.</li>
-            <li>La <strong>Ce se exportă</strong>, alege tipurile: cruce roșie, cruce neagră, post și dezlegări, sfinți fără cruce.</li>
-            <li>Apasă <strong>Sincronizează cu Calendar</strong>. La prima sincronizare, iOS îți cere acces la Calendar: alege <strong>Acces complet</strong>.</li>
+            <li>La <strong>Ce se exportă</strong>, alege tipurile: cruce roșie, cruce neagră, post și dezlegări, sfinți fără cruce. Implicit sunt alese doar <strong>crucea roșie</strong> și <strong>crucea neagră</strong>.</li>
+            <li>Apasă <strong>Sincronizează acum</strong>. La prima sincronizare, iOS îți cere acces la Calendar: alege <strong>Acces complet</strong>.</li>
         </ol>
         <p>După sincronizare, Setări afișează data ultimei sincronizări și până la ce zi acoperă calendarul.</p>
         <ul>
             <li><strong>Actualizare automată:</strong> după prima sincronizare, calendarul se actualizează singur o dată pe săptămână, când deschizi aplicația, ca perioada exportată să avanseze odată cu timpul.</li>
-            <li><strong>Dacă schimbi perioada sau tipurile exportate</strong>, apare un aviz; apasă din nou <strong>Sincronizează cu Calendar</strong> ca să aplici modificările.</li>
+            <li><strong>Dacă schimbi perioada sau tipurile exportate</strong>, apare un aviz; apasă din nou <strong>Sincronizează acum</strong> ca să aplici modificările.</li>
             <li><strong>Ca să elimini calendarul</strong>, apasă <strong>Elimină calendarul „OrtodoxRO”</strong> și confirmă. Calendarul și toate evenimentele lui se șterg din aplicația Calendar; le poți adăuga din nou oricând.</li>
         </ul>
         <div class="tip">Sincronizarea are nevoie de <strong>acces complet</strong> la Calendar. Dacă în Setări scrie „Acces Calendar: doar adăugare” sau „refuzat”, apasă <strong>Deschide Setările</strong> și alege <strong>Calendare → Acces complet</strong>.</div>
     </div>
 
     <div class="section">
-        <h2>7. Notificări (Premium)</h2>
-        <p>Notificările sunt <strong>oprite implicit</strong>. Ca să le pornești, deschide Setări → Notificări și activează <strong>Primește notificări</strong>; iOS îți va cere permisiunea.</p>
+        <h2>8. Notificări (Premium)</h2>
+        <p>Notificările sunt <strong>oprite implicit</strong>. Ca să le pornești, deschide Setări → <strong>Mementouri</strong> și activează <strong>Notificări</strong>; iOS îți va cere permisiunea.</p>
         <p>La <strong>Ce mementouri primești</strong> poți alege mementouri pentru:</p>
         <ul>
             <li>sărbători cu cruce roșie;</li>
@@ -192,18 +249,17 @@
             <strong>Dacă notificările sunt blocate din iOS</strong>, Setări afișează „Notificările sunt blocate din Setările iPhone”:<br>
             1. Apasă <strong>Deschide Setările</strong> de lângă mesaj.<br>
             2. Activează <strong>Permite notificările</strong>.<br>
-            3. Revino în aplicație; mementourile se programează la următoarea pornire a aplicației sau imediat ce modifici o setare din secțiunea Notificări.
+            3. Revino în aplicație; mementourile se programează la următoarea pornire a aplicației sau imediat ce modifici o setare din secțiunea Mementouri.
         </div>
-    </div>
     </div>
 
     <div class="section">
-        <h2>8. Prieteni și urări (Premium)</h2>
-        <p>Secțiunea Prieteni permite:</p>
+        <h2>9. Prieteni și urări (Premium)</h2>
+        <p>Deschide Setări → Mementouri → <strong>Prieteni</strong>. Aici poți face:</p>
         <ul>
             <li>adăugarea/editarea unui prieten;</li>
             <li>completarea numelui, telefonului și a zilei de naștere din Contacte (opțional);</li>
-            <li>asocierea aliasurilor pentru potrivire mai bună cu onomastica;</li>
+            <li>asocierea aliasurilor pentru potrivire mai bună cu onomastica (ziua de nume se caută după prenume);</li>
             <li>setarea zilei de naștere (zi și lună), pentru memento anual;</li>
             <li>alegerea unui șablon de urare (festivă, călduroasă, împliniri, prietenească sau cu îmbrățișare);</li>
             <li>editarea textului mesajului înainte de trimitere;</li>
@@ -213,22 +269,22 @@
     </div>
 
     <div class="section">
-        <h2>9. Widget-uri</h2>
+        <h2>10. Widget-uri</h2>
         <p>OrtodoxRO oferă două widget-uri:</p>
         <h3>Ziua curentă (gratuit)</h3>
-        <p>Afișează sărbătoarea și informația de post/dezlegare pentru ziua de azi. Disponibil în format mic și mediu pe ecranul principal.</p>
+        <p>Afișează sărbătoarea de azi și postul zilei, cu aceleași cuvinte ca în aplicație (ex. „Post · pește”). Disponibil în format mic și mediu pe ecranul principal.</p>
         <h3>Următoarea sărbătoare (Premium)</h3>
         <p>Afișează următoarea sărbătoare majoră cu numărătoare inversă (zile rămase) și o recomandare practică. Disponibil în format mic și mediu pe ecranul principal.</p>
         <div class="tip">Pe iOS 17 sau mai nou, ambele widget-uri pot fi adăugate și pe <strong>ecranul de blocare</strong> (Lock Screen) — în format inline, rectangular sau circular.</div>
     </div>
 
     <div class="section">
-        <h2>10. Apple Watch</h2>
+        <h2>11. Apple Watch</h2>
         <p>OrtodoxRO include o aplicație dedicată pentru Apple Watch. Se instalează automat împreună cu aplicația de pe iPhone, din aplicația Watch.</p>
 
         <h3>Aplicația de pe ceas</h3>
         <ul>
-            <li>ziua curentă, cu sărbătoarea și marcajele de post sau dezlegare;</li>
+            <li>ziua curentă, cu sărbătoarea și postul zilei (ex. „Post · vin și ulei”);</li>
             <li>următoarea sărbătoare, cu numărătoare inversă (Premium);</li>
             <li>lista zilelor următoare;</li>
             <li>atinge orice zi pentru detaliile liturgice complete.</li>
@@ -249,7 +305,7 @@
     </div>
 
     <div class="section">
-        <h2>11. Abonament Premium</h2>
+        <h2>12. Abonament Premium</h2>
         <ul>
             <li>Premium este disponibil în două planuri auto-reînnoibile:
                 <ul>
@@ -258,37 +314,37 @@
                 </ul>
             </li>
             <li>Ambele planuri includ o <strong>perioadă de probă gratuită de 7 zile</strong>. Poți anula oricând în timpul perioadei de probă fără nicio plată.</li>
-            <li>Poți restaura achizițiile din ecranul Paywall sau din Setări → Abonament; aplicația îți confirmă rezultatul.</li>
-            <li>În Setări → Abonament vezi data următoarei reînnoiri sau, dacă ai oprit reînnoirea automată, data la care expiră Premium.</li>
+            <li>Poți restaura achizițiile din ecranul Premium sau din cardul <strong>OrtodoxRO Premium</strong> din Setări; aplicația îți confirmă rezultatul.</li>
+            <li>În cardul <strong>Premium activ</strong> din Setări vezi data următoarei reînnoiri sau, dacă ai oprit reînnoirea automată, data la care expiră Premium.</li>
             <li>Dacă produsul nu apare imediat, apasă „Încearcă din nou" — poate fi o problemă temporară de rețea.</li>
             <li>Dacă restaurarea nu găsește achiziții, verifică că ești autentificat cu același Apple ID.</li>
-            <li>Poți anula din Setări → Abonament → <strong>Gestionează abonamentul</strong> sau din iOS: <strong>Setări &gt; [numele tău] &gt; Abonamente</strong>.</li>
+            <li>Poți anula din Setări → <strong>Gestionează abonamentul</strong> sau din iOS: <strong>Setări &gt; [numele tău] &gt; Abonamente</strong>.</li>
             <li>Dacă plata eșuează, Setări afișează „Problemă la reînnoire” și un buton pentru actualizarea metodei de plată.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>12. Depanare rapidă</h2>
+        <h2>13. Depanare rapidă</h2>
 
         <h3>Nu se sincronizează calendarul</h3>
         <ol>
-            <li>În Setări OrtodoxRO → Calendar iOS, verifică mesajul de acces: trebuie să scrie „Acces Calendar: permis”. Dacă scrie „doar adăugare” sau „refuzat”, apasă <strong>Deschide Setările</strong> și alege <strong>Acces complet</strong>.</li>
+            <li>În Setări OrtodoxRO, la secțiunea <strong>Calendar iOS</strong>, verifică mesajul de acces: trebuie să scrie „Acces Calendar: permis”. Dacă scrie „doar adăugare” sau „refuzat”, apasă <strong>Deschide Setările</strong> și alege <strong>Acces complet</strong>.</li>
             <li>Dacă apare mesajul că niciun cont nu permite crearea unui calendar nou, activează calendarele iCloud din Setări iOS → Calendar → Conturi.</li>
-            <li>Apasă din nou <strong>Sincronizează cu Calendar</strong>.</li>
+            <li>Apasă din nou <strong>Sincronizează acum</strong>.</li>
         </ol>
 
         <h3>Nu primesc notificări</h3>
         <ol>
-            <li>Verifică în Setări OrtodoxRO → Notificări că <strong>Primește notificări</strong> este pornit (implicit este oprit).</li>
+            <li>Verifică în Setări OrtodoxRO → <strong>Mementouri</strong> că <strong>Notificări</strong> este pornit (implicit este oprit).</li>
             <li>Verifică dacă notificările sunt permise pentru aplicație în Setările iPhone.</li>
-            <li>Verifică <strong>Ora mementoului</strong> și lista <strong>Ce mementouri primești</strong>.</li>
+            <li>Verifică <strong>Ora mementoului</strong> și <strong>Ce mementouri primești</strong>.</li>
             <li>Asigură-te că dispozitivul nu este într-un mod de concentrare (Focus) care blochează alertele.</li>
         </ol>
 
         <h3>Premium nu este activ după reinstalare</h3>
         <ol>
-            <li>Deschide ecranul Premium (din toolbar sau Setări → Abonament).</li>
-            <li>Atinge „Restaurează achizițiile" și așteaptă confirmarea.</li>
+            <li>Deschide Setări; cardul <strong>OrtodoxRO Premium</strong> este primul.</li>
+            <li>Atinge <strong>Restaurează achizițiile</strong> și așteaptă confirmarea.</li>
             <li>Dacă apare mesajul „Nu s-au găsit achiziții", verifică că ești autentificat cu același Apple ID.</li>
         </ol>
 
@@ -301,12 +357,12 @@
     </div>
 
     <div class="section">
-        <h2>13. Contact</h2>
+        <h2>14. Contact</h2>
         <ul>
             <li>Developer: Valentin Trantescu</li>
             <li>Email: <a href="mailto:vt_apps@yahoo.com">vt_apps@yahoo.com</a></li>
         </ul>
-        <p>Poți scrie și direct din aplicație: Setări → Despre aplicație → <strong>Contact și suport</strong>.</p>
+        <p>Poți scrie și direct din aplicație: Setări → Despre → <strong>Contact și suport</strong>.</p>
     </div>
 </body>
 </html>
